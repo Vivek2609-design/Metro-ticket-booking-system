@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-image: url(simple.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.profile-container {
+    background: rgb(237, 144, 144);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.profile-details h2 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.profile-details p,
+.profile-details ul {
+    margin: 10px 0;
+}
+
+.profile-details ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.edit-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #510dc0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1 style="font-size: 35px;color: #1118e8;">Edit Profile</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Metro Transit Authority">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description">Providing reliable and efficient transportation services</textarea>
+
+            <label for="about">About Us:</label>
+            <textarea id="about" name="about">The Metro Transit Authority (MTA) is dedicated to providing safe, reliable, and efficient public transportation services to the community. With a network of buses and trains, we aim to connect people and places seamlessly.</textarea>
+
+            <label for="services">Services:</label>
+            <textarea id="services" name="services">Metro Rail, Bus Services, Paratransit Services, Park and Ride</textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="info@metrotransit.com">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="(123) 456-7890">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" value="123 Transit Lane, Metropolis, XY 12345">
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px; 
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/*hover effects*/
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+
+}
+.footerNav ul li a{
+    color: rgb(240, 6, 6);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    opacity: 2px;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+:root{
+    --color-primary: #ff0099;
+    --color-white: #b9f0ec;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menu__bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+.logo span{
+    color: var(--color-primary);
+}
+.menu__bar ul{
+    list-style: none;
+    display: flex;
+
+}
+.menu__bar ul li{
+    padding: 10px 30px;
+}
+.menu__bar ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3;
+}
+.menu__bar ul li a:hover {
+    color: var(--color-primary);
+
+}
+.dropdown__menu{
+    display: none;
+}
+.menu__bar ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 62%;
+    background-color: var(--color-black);
+    }
+    .dropdown__menu ul {
+        display: block;
+        margin: 10px;
+    
+    }
+    .dropdown__menu ul li {
+    width: 150px;
+    padding: 20px;
+    
+    }
+
+    
